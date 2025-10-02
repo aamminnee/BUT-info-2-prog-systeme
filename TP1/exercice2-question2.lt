@@ -1,23 +1,23 @@
 ld #0 $18
+mv #0 a
+cmp 0
+beq 9
 ld #1 0
 mv #1 a
 add #0
 dec #0
-bnz 3
+bnz 6
+brn 12
+st #0 $19
+brn 13
 st a $19
 
 
 
 
 
-
-
-
-
-
-0
 6
-21
+
 
 
 

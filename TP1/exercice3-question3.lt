@@ -1,0 +1,51 @@
+ld #0 1
+ld #1 1000
+ld #3 $21
+mv #0 a
+add #1
+div 2
+mv a #2
+cmp #3
+beq 18
+bmi 14
+mv #2 a 
+sub 1
+mv a #1
+brn 3
+mv #2 a
+add 1
+mv a #0
+brn 3
+st #2 $20
+
+999
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
