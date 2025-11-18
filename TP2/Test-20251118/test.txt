@@ -1,0 +1,5 @@
+Ceci est un fichier test!
+
+Des caractères variés : &@à
+
+89

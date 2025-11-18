@@ -1,0 +1,23 @@
+exercie 1 : 
+    1) ./a.out arg1 arg2
+
+    2) voir ./code/ex1.c
+
+exercie 2 : 
+    1) fait
+
+    2) voir ./code/ex2_2.c
+
+    3) voir ./code/ex2_3.c
+
+    4) voir ./code/ex2_4.c
+
+exercice 3 : 
+    1) voir ./code/ex3.c
+
+exercice 4 : voir ./code/ex4.c
+    voici les deuxx commande :
+        - chemin/vers/ex4 ../archive.dat archiver (il faut se mettre dans le dossier a archiver)
+        - chemin/vers/ex4 ../archive.dat extraire
+
+
