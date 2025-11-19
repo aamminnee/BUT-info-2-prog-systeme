@@ -1,0 +1,83 @@
+exercice 1 : 
+1) voir ex1_1.c
+
+2) 
+amine@amine:~/Projets/BUT-info-2-prog-systeme/TP3$ ./ex1_1 // sans le saut de ligne
+BonjourAu revoir !
+BonjourAu revoir !
+
+amine@amine:~/Projets/BUT-info-2-prog-systeme/TP3$ ./ex1_1 // avec la saut de ligne
+Bonjour
+Au revoir !
+Au revoir !
+
+3) voir ex1_3.c
+
+4) voir ex1_4.c
+
+4) voir ex1_5.c
+
+
+exercice 2:
+1) voir ex2_1.c
+
+2) 
+amine@amine:~/Projets/BUT-info-2-prog-systeme/TP3$ ./ex2_2
+PERE -> valeur de x = 5, adresse = 0x7fff63ae1c90
+FILS -> valeur de x = 5, adresse = 0x7fff63ae1c90
+
+je constate que la variable x du processus père et le processus fils 
+ont la même adresse et la même valeur
+donc ils partagent la meme variable
+
+3)
+amine@amine:~/Projets/BUT-info-2-prog-systeme/TP3$ ./ex2_3
+PERE -> x = 0, adresse = 0x7ffd614b3430
+FILS -> x = 7, adresse = 0x7ffd614b3430
+
+Après un fork(), le fils reçoit une copie indépendante de la mémoire du père. 
+Ainsi, même si les variables ont la même adresse virtuelle, 
+elles sont différentes : modifier une variable dans le fils n’affecte pas celle du père.
+
+exercice 3:
+1) voir ex3_1.c
+
+2) voir ex3_2.c
+on peut voir les 20 processus zombies 
+amine@amine:~$ ps -ef | grep ex3_2
+amine       6624    3694  0 15:55 pts/1    00:00:00 ./ex3_2
+amine       6625    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6626    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6627    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6628    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6629    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6630    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6631    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6632    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6633    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6634    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6635    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6636    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6637    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6638    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6639    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6640    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6641    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6642    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6643    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6644    6624  0 15:55 pts/1    00:00:00 [ex3_2] <defunct>
+amine       6826    6813  0 15:56 pts/0    00:00:00 grep --color=auto ex3_2
+
+3) voir ex3_3.c
+
+
+exercie 4: 
+1) voir ex4_1.c
+
+2) voir ex4_2.c
+
+3) voir ex4_3.c
+
+4) voir ex4_3.c
+
+5) voir ex4_5.c
