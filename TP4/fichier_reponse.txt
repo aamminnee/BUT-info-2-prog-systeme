@@ -1,0 +1,21 @@
+Exercice 1
+
+1. On voit la chaîne "Salut!" s'afficher deux fois donc 
+Salut!Salut!. 
+printf utilise un buffer. Comme il n'y a pas de retour à la ligne (\n), 
+le texte reste dans le buffer du processus père. Lors du fork, 
+le processus fils hérite d'une copie exacte de la mémoire du père, 
+y compris ce buffer non vide. À la fin du programme (ou lors du \n), 
+les deux processus vident leur buffer, affichant le message deux fois.
+
+
+Exercie 3 
+
+Que se passe-t-il (comparaison -ansi) ?
+
+Le gestionnaire de signal reste installé après avoir été déclenché. 
+Vous pouvez faire CTRL-C plusieurs fois, le message s'affichera à chaque fois.
+
+Avec l'option -ansi : 
+Sur certains vieux systèmes ou configurations strictes, le signal est remis à son comportement par défaut (SIG_DFL) 
+après la première exécution du handler. Le premier CTRL-C affiche le message, le second tue le programme.
